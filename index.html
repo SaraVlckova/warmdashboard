@@ -1,0 +1,319 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="ui">
+        <header class="header-mobile">
+            <div class="flex align-center justify-space-between">
+                <span onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="20" viewBox="0 0 32 20">
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect width="32" height="20" fill="none"/>
+                      </clipPath>
+                    </defs>
+                    <g id="Group_74" data-name="Group 74" transform="translate(-12044.746 -5034.119)">
+                      <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(12044.746 5034.119)" clip-path="url(#clip-path)">
+                        <g transform="translate(-12073.5 -5073)">
+                          <line id="Line_69" data-name="Line 69" x2="25.5" transform="translate(12076.5 5074.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+                        </g>
+                        <g transform="translate(-12073.5 -5065)">
+                          <line id="Line_69-2" data-name="Line 69" x2="25.5" transform="translate(12076.5 5074.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+                        </g>
+                        <g transform="translate(-12073.5 -5057)">
+                          <line id="Line_69-3" data-name="Line 69" x2="25.5" transform="translate(12076.5 5074.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg></span>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="24" viewBox="0 0 67 24">
+                        <defs>
+                          <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 416 148">
+                            <image width="416" height="148" xlink:href="data:image/png;base64,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"/>
+                          </pattern>
+                        </defs>
+                        <rect id="Asset_1" data-name="Asset 1" width="67" height="24" fill="url(#pattern)"/>
+                      </svg>
+                </div>
+                <span><img src="imgs/profile.png" alt=""></span>
+            </div>
+        </header>
+        <div class="menu card">
+            <header class="header">
+                <div class="logo">
+                    <!-- logo -->
+                </div>
+                <div class="burger display-lg-none" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.549" height="26.321" viewBox="0 0 17.549 26.321">
+                        <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M16.541,19.351,28.156,9.4a1.691,1.691,0,0,0,0-2.656,2.471,2.471,0,0,0-3.107,0L11.89,18.019a1.69,1.69,0,0,0-.064,2.594L25.039,31.966a2.474,2.474,0,0,0,3.107,0,1.691,1.691,0,0,0,0-2.656Z" transform="translate(-11.251 -6.194)" fill="#fff"/>
+                      </svg>
+                </div>
+            </header>
+
+            <div class="nav-bar">
+                <div class="header-action">   
+                    <!-- Add songs button -->
+                </div>
+               
+                <button class="btn-prim main mg-b-2 pd-l-1 nofunction">
+                    <div class="mg-r-1 flex align-center">
+                        <span class="icon pd-l-1 mg-r-1"></span>
+                        <span class="">Start monitoring</span>
+                    </div>
+                </button>
+                <p class="greytext align-l">Navigation</p>
+                <nav class="nav">
+                    <a id="addSongsItem" href="" class="active-item flex align-center">Add songs</a>
+                    <a id="mySongsItem" href="" class="menu-item flex align-center nofunction">My songs</a>
+                    <a id="playsItem" href="" class="menu-item flex align-center nofunction">Plays</a>
+                    <a id="stationsItem" href="" class="menu-item flex align-center nofunction">Radio stations</a>
+                    <a id="analyticsItem" href="" class="menu-item flex align-center nofunction">Analytics</a>
+                    <a id="referItem" href="" class="menu-item flex align-center nofunction">Refer a friend</a>
+                    <a id="promoItem" href="" class="menu-item flex align-center nofunction">Radio promotion</a>
+                    <a id="faqItem" href="" class="menu-item flex align-center nofunction">FAQ</a>
+                    <a id="chartsItem" href="" class="menu-item flex align-center nofunction">WARM Charts</a>
+                </nav>
+                
+                <div class="profile">
+                    <!-- profile -->
+                </div>
+            </div>
+
+
+        </div>
+        <main class="main pd-2">
+            <div class="heading mg-b-3">
+                <h1>Add songs</h1>
+            </div>
+            <div class="action-bar row card mg-b-2">
+                <div class="col col-lg-8">
+                    <input class="input" type="text" placeholder="Search for artist, tracks, albums, ISRC… ">
+                </div>
+                <div class="col col-lg-4 flex justify-end align-center">
+                    <button class="btn btn-prim">
+                        <div class="btn-divider divider-right pd-r-1 mg-r-1">
+                            Drag & drop
+                        </div>
+                        <span>Upload .mp3 file</span>
+                    </button>
+                </div>
+            </div>
+            <div class="content row">
+                <div class="col col-lg-8">
+                    <div class="card no-padding">
+                        <!-- table -->
+                        <table class="table">
+                            <thead>
+                                <th>
+                                    <div class="flex">
+                                        <div class="cell-side mg-r-2"></div>
+                                        <span>
+                                            Artist
+                                            <span>
+                                                <!-- arrows -->
+                                            </span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th>
+                                    <span>
+                                        Title
+                                        <span>
+                                            <!-- arrows -->
+                                        </span>
+                                    </span>
+                                </th>
+                                <th>
+                                    <div class="flex justify-center">
+                                        <span>
+                                            Historical data
+                                            <span>
+                                                <!-- arrows -->
+                                            </span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="flex justify-center">
+                                        <div class="tooltip">
+                                            <span class="infoicon"></span>
+                                            <span class="textbox">30-days free trial for 1 song. Free trial gives you all features
+                                                as 1 month paid subscription for 1 song. Free trial is one time use only.</span>
+                                        </div>
+                                    </div>
+                                </th>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- shopping card cart -->
+                <div class="col col-lg-4 card row-sm-start-1">
+                    <h2 class="align-l">Shopping Cart</h2>
+                    <div class="display-sm-none">
+                        <div class="line"></div>
+
+                        <div class="flex flex-column align-center">
+                            <div class="illustration mg-t-1"></div>
+                            <h3>Shopping cart feels empty!</h3>
+                            <p class="greytext">Please add a song.</p>
+    
+                            <div class="btn btn-prim mg-b-1 disabled resize-btn">
+                            Checkout
+                            </div>
+                            <div class="btn btn-sec mg-b-2 disabled resize-btn">
+                            Bundle Checkout
+                            </div>
+    
+                            <p class="greytext additionaltext">*We support 5 and 10 songs bundle packages.</p>
+    
+                        </div>
+    
+                        <div class="line"></div>
+    
+                        <div class="paymenticons mg-t-2 flex justify-center">
+                            <span class="visa mg-r-1"></span>
+                            <span class="mastercard mg-r-1"></span>
+                            <span class="paypal"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <template id="songTemplate">
+            <tr>
+                <td>
+                    <div class="cell-collapse">
+                        <div class="cell-main">
+                            <div class="flex align-center">
+                                <div class="cell-side mg-r-2" id="rowControl">
+                                    <div class="chevron-up">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.973" height="6.846" viewBox="0 0 11.973 6.846">
+                                            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.176,13.31,16.7,17.841a.852.852,0,0,0,1.208,0,.863.863,0,0,0,0-1.212L12.782,11.5a.854.854,0,0,0-1.18-.025L6.437,16.625a.856.856,0,0,0,1.208,1.212Z" transform="translate(-6.188 -11.246)" fill="#1574f5"/>
+                                        </svg>
+                                    </div>
+                                    <div class="chevron-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.973" height="6.846" viewBox="0 0 11.973 6.846">
+                                            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.176,16.029,16.7,11.5a.852.852,0,0,1,1.208,0,.863.863,0,0,1,0,1.212l-5.129,5.133a.854.854,0,0,1-1.18.025L6.437,12.713A.856.856,0,0,1,7.645,11.5Z" transform="translate(-6.188 -11.246)" fill="#1574f5"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span id="songArtistName">Dean and Chapter</span>
+                            </div>
+                        </div>
+                        <div class="cell-sub">
+                            <div class="flex">
+                                <div class="cell-side mg-r-2">
+                                </div>
+                                <div class="flex flex-column">
+                                    <div class="label">Label</div>
+                                    <span id="songArtistLabel">popup media</span>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="cell-collapse">
+                        <div class="cell-main" id="songName">
+                            Friends with the Devil
+                        </div>
+                        <div class="cell-sub">
+                            <div class="flex justify-space-between">
+                                <div class="flex flex-column mg-r-2">
+                                    <div class="label">Album</div>
+                                    <span id="songAlbum">Head Down Heart Up</span>
+                                </div>
+                                <div class="flex flex-column">
+                                    <div class="label">Duration</div>
+                                    <span id="songDuration">2:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="cell-collapse">
+                        <div class="cell-main">
+                            <div class="flex justify-center">
+                                <button class="btn btn-small btn-sec" id="availabilityBtn">
+                                    Available
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cell-sub">
+                            <div class="flex flex-column">
+                                <div class="label">ISRC</div>
+                                <span id="songIsrc">CA86K1800001</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="cell-collapse">
+                        <div class="cell-main">
+                            <div class="flex justify-center">
+                                <button id="trialBtn" class="btn btn-small btn-prim">
+                                    Trial
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cell-sub"></div>
+                    </div>
+                </td>
+            </tr>
+        </template>
+
+        <!-- confirmation modal -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content card">
+                <span class="modal-close" onclick="toggleModal('#confirmationModal')">&times;</span>
+
+                <h2 class="mg-t-1 pd-l-3">Start free trial for</h2>
+                <p id="songName">Some text in the Modal..</p>
+                <div class="flex justify-center mg-b-1">
+                    <div class="btn btn-ter mg-r-3" onclick="toggleModal('#confirmationModal')">
+                        Cancel
+                    </div>
+                    <div class="btn btn-prim" onclick="handleModalChange('#confirmationModal')">
+                        Confirm
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- success modal -->
+        <div id="successModal" class="modal">
+            <div class="modal-content card">
+                <span class="modal-close" onclick="toggleModal('#successModal')">&times;</span>
+                <span class="success-icon mg-t-2 pd-l-3"></span>
+                <h2 class="mg-t-2">Success!</h2>
+        
+                <p class="mg-b-2">Free trial for <span id="songName">Blah</span> has been created. Free trial ends on xx/xx/2021</p>
+                <div class="flex justify-center mg-b-2">
+                    <div class="btn btn-ter mg-r-3 resize-btn2" onclick="toggleModal('#successModal')">
+                        Close
+                    </div>
+                    <div class="btn btn-sec" onclick="toggleModal('#successModal')">
+                        Show airplay
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
